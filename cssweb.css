@@ -1,0 +1,441 @@
+body{
+    background-color: #6e9b96;
+    align-items: center;
+    display: flex;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.bContainer{
+    position: relative;
+    background-color: white;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 10px 15px #ffffff;
+}
+
+.leftSide{
+    position: relative;
+    background-color: #ffffff;
+    padding: 40px;
+    background-image: url(https://i.pinimg.com/564x/98/3e/1f/983e1f403d53172ceb3cbaf2b14c948b.jpg);
+}
+
+.profileContent{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #242222;
+}
+
+.profileContent h2{
+    color: #000000;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.leftSide h3{
+    text-decoration: underline;
+}
+
+.profileContent h2 span{
+    font-size: 0.7em;
+    font-weight: 800;
+    color:#6e9b96;
+    font-family: Copperplate, Papyrus, fantasy;
+}
+
+.profileContent .proImg{
+    position: relative;
+    width: 140px;
+    height: 140px;
+    overflow: hidden;
+}
+
+.profileContent .proImg img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.title{
+    color: #000000;
+    font-weight: 800;
+}
+
+.personalInfo ul{
+    position: relative;
+    padding-left: 10px;
+}
+
+.personalInfo ul li{
+    position: relative;
+    font-size: 0.8em;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.personalInfo ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #6e9b96;
+}
+
+.personalSkills .percent{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #bde5e0;
+    display: block;
+    margin-top: 5px;
+}
+
+.personalSkills .percent div{
+    position: absolute;
+    top: 2px;
+    bottom: 2px;
+    left: 3px;
+    height: 40%;
+    width: 30px;
+    background:#4354ab;
+}
+
+.personalSkills ul{
+    position: relative;
+    padding-left: 10px;
+}
+
+.personalSkills ul li{
+    position: relative;
+    font-size: 0.8em;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.personalSkills ul li meter{
+    width: 200px;
+    height: 15px;
+}
+
+.proSkills .percent{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #bde5e0;
+    display: block;
+    margin-top: 5px;
+}
+
+.proSkills .percent div{
+    position: absolute;
+    top: 2px;
+    bottom: 2px;
+    left: 3px;
+    height: 40%;
+    width: 30px;
+    background: #4354ab;
+}
+
+.proSkills ul{
+    position: relative;
+    padding-left: 10px;
+}
+
+.proSkills ul li{
+    position: relative;
+    font-size: 0.8em;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.courses ul{
+    position: relative;
+    padding-left: 10px;
+}
+
+.courses ul li{
+    position: relative;
+    font-size: 0.8em;
+    list-style: square;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.courses ul li a{
+    font-style: italic;
+    background-image: linear-gradient(
+    to right,
+    #e17fad,
+    #e17fad 50%,
+    #000 50%
+  );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.courses ul li a:before {
+    content: '';
+    background: #901b51;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+
+.courses ul li a:hover{
+    background-position: 0;
+}
+
+.courses ul li a:hover::before{
+    width: 100%;
+}
+
+.contactInfo ul{
+    position: relative;
+    padding-left: 10px;
+}
+
+.contactInfo summary {
+    color: #000000;
+    font-weight: 800;
+    font-size: 1.2em;
+    text-decoration: underline;
+}
+
+.contactInfo ul li{
+    position: relative;
+    font-size: 0.8em;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.contactInfo ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #6e9b96;
+}
+
+.contactInfo ul li span{
+    color: #000000;
+    font-weight: 300;
+}
+
+.contactInfo ul li a{
+    text-decoration: none;
+    color: #000000;
+    box-shadow: inset 0 0 0 0 #54b3d6;
+    color: #000000;
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .5s ease-in-out, box-shadow .5s ease-in-out;
+}
+
+.contactInfo ul li a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 0.9em;
+    box-shadow: inset 165px 0 0 0 #2c3e96;
+    color: white;
+}
+
+.rightSide{
+    position: relative;
+    background-color: #d5f1ee;
+    padding: 40px;
+}
+
+.aboutMe{
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.aboutMe h2{
+    border-top: 4px groove #107474;
+    border-bottom: 4px groove #107474;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.aboutMe:last-child{
+    margin-bottom: 0;
+}
+
+.title2{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.aboutMe .box{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px ;
+}
+
+.aboutMe .box .year{
+    min-width: 115px;
+    padding-right: 20px;
+    padding-top: 0;
+    position: relative;
+}
+
+.aboutMe .box .year:before{
+    content: "";
+    position: absolute;
+    top: 24px;
+    right: 4px;
+    width: 10px;
+    height: 10px;
+    background: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 50%;
+}
+
+.aboutMe .box .year:after{
+    content: "";
+    position: absolute;
+    top: 36px;
+    right: 8.5px;
+    width: 3px;
+    height: 100%;
+    background: #4354ab;
+}
+
+.aboutMe .box .year h5{
+    text-transform: uppercase;
+    color:#7a7575;
+    font-weight: 600;
+}
+
+.aboutMe .box .text h4{
+    color:#242222;
+    font-size: 16px;
+    font-weight:bolder;
+}
+
+.progSkills h2{
+    border-top: 4px groove #107474;
+    border-bottom: 4px groove #107474;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.progSkills .box{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.progSkills .box h4{
+    color: #000000;
+    font-weight: 500;
+
+}
+
+.progSkills .box .percent{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #ffffff;
+}
+
+.progSkills .box .percent div{
+    position: absolute;
+    top: 2px;
+    bottom: 2px;
+    left: 3px;
+    height: 60%;
+    width: 5px;
+    background: #4354ab;
+}
+
+@media only screen and (max-width: 576px){
+    .bContainer{
+        margin: 10px; 
+        grid-template-columns: repeat(1,1fr);
+    }
+    .proSkills .percent{
+        width: 100%;
+        height: 6px;
+    }
+    .proSkills .percent div{
+        height: 100%;
+        width: 80px;
+    }
+    .personalSkills .percent{
+        width: 100%;
+        height: 6px;
+    }
+    .personalSkills .percent div{
+        height: 100%;
+        width: 80px;
+    }
+
+}
+
+@media only screen and (max-width: 768px){
+    .bContainer {
+        margin: 10px; 
+        grid-template-columns: repeat(1,1fr);
+    }
+    .proSkills .percent{
+        width: 40%;
+        height: 6px;
+    }
+    .personalSkills .percent{
+        width: 40%;
+        height: 6px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .bContainer{
+        margin: 10px; 
+        grid-template-columns: repeat(1,1fr);
+    }
+    .proSkills .percent{
+        width: 100%;
+        height: 6px;
+    }
+    .proSkills .percent div{
+        height: 100%;
+        width: 80px;
+    }
+    .personalSkills .percent{
+        width: 100%;
+        height: 6px;
+    }
+    .personalSkills .percent div{
+        height: 100%;
+        width: 80px;
+    }
+}
